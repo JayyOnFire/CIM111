@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
+body{
+  background-color: coral;
+}
+
+section{
+  background-color: white;
+  background-color: rgba(255,255,255,0.7); /* white with a 70% opacity*/
+}
+
+h1{
+  color: blue;
+}
+
+h3{
+  color: #ffffff;
+}
+
+h3 em{
+  font-family: cursive;
+  color: red;
+  text-decoration: underline;
+}
+
+li{
+  font-size: 20px;
+  list-style: square;
+}
+
+ul li{
+  list-style: none;
+}
+
+a{
+  color: orange;
+  text-decoration: none;
+}
+
+a:hover{
+  background-color: green;
+  font-style: oblique;
+}
+
+#centerName{
+  text-align: center;
+}
+
+#myHeader {
+  color: purple;
+  text-align: center;
+}
+
+#header3{
+  text-align: center;
+  background-color: white;
+}
+
+#addressSpot{
+  color: red;
+  background-color: black;
+}
+
+#moveHobbies{
+  text-align: center;
+}
+
+  .prodigy{
+    font-weight: bolder;
+  }
+
+.work {
+  background-color: yellow;
+}
+
+input:read-only{
+  background: cyan;
+}
+
+img{
+  filter: blur(4px);
+}
