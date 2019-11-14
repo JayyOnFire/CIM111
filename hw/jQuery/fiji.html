@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>FIJI</title>
+
+    <style media="screen">
+      img{
+        width: 300px;
+      }
+
+      span.tip {
+
+    /* Required */
+    position: absolute;
+    z-index: 2;
+    display: none;
+
+    /* Optional */
+    font-size: 15px;
+    max-width: 150px;
+    height: auto;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px #666;
+    background: #FD0;
+}
+
+h1 {
+  text-align: center;
+}
+
+body {
+  background-color: black;
+}
+
+li {
+  color: gold;
+}
+
+h3 {
+  color: red;
+}
+
+div {
+  color: blue;
+}
+    </style>
+  </head>
+  <body>
+    <section>
+    <h1>Fiji - The Most Beautiful Island</h1>
+    <section>
+    <img src='https://live.staticflickr.com/90/244931839_a8d7401d2d.jpg' alt='image1'>
+    </section>
+      <p>Fiji, a country in the South Pacific, is an archipelago of more than 300 islands. It's famed for rugged landscapes, palm-lined beaches and coral reefs with clear lagoons. Its major islands, Viti Levu and Vanua Levu, contain most of the population. Viti Levu is home to the capital, Suva, a port city with British colonial architecture. </p>
+<img src='https://farm1.staticflickr.com/86/244931989_a8eccef248.jpg' 'alt=image2'>
+</section>
+
+<section>
+    <h2 id="loc">Location</h2>
+      <p id="locToggle">Fiji is a group of islands in the South Pacific. It is an island country in Melanesia, part of Oceania.  It is near the southeast of New Zealand. </p>
+<img src='https://live.staticflickr.com/3237/3050855181_dd8d2ed91f_b.jpg' 'alt=image3'>
+</section>
+
+<section>
+<h2>Things to Know Before Visiting:</h2>
+      <ul>
+        <li id="item1" class="item">Language</li>
+        <li id="item2" class="item">Foods</li>
+        <li id="item3" class="item">Flag</li>
+        <li id="item4" class="item">Currency</li>
+        <li id="item5" class="item">Daily Life</li>
+      </ul>
+    <img src='https://farm2.staticflickr.com/1539/25497305711_7e982b3759_b.jpg' alt='image4'>
+</section>
+
+      <p id="changeText"></p>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="jQuery.mousetip.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("h1").css("color","blue");
+        $("h2").css("color","red")
+        $("p").css("color","gold")
+
+ $('div').mousetip('.tip');
+
+ $("#loc").click(function(){
+
+   $("#locToggle").slideToggle();
+
+ });
+
+      $("#item1").mouseenter(function(){
+
+        $("#changeText").html("They speak Fijian, Fiji Hindi, and English. This is how you say a formal welcome: Ni sa bula vinaka");
+
+      });
+
+      $("#item2").mouseenter(function(){
+
+        $("#changeText").html("Some of the popular ingredients in Fiji foods are coconut, cassava, sea grapes, fresh local fish, breadfruit, taro, etc. Kokoda is the most popular food. ");
+      });
+
+      $("#item3").mouseenter(function(){
+
+      $("#changeText").html("<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Fiji.svg/255px-Flag_of_Fiji.svg.png' alt='image1'>");
+
+      });
+
+      $("#item4").mouseenter(function(){
+
+      $("#changeText").html("The currency that is currently used is the Fijian Dollar. 1 Fiji dollar is equivalent to 0.46 in American money.");
+
+      });
+
+      $("#item5").mouseenter(function(){
+
+      $("#changeText").html("Fiji is deeply mixed in ethnicity. Their traditions is a relaxed combination of traditional culture and a strong belief in family and community. ");
+
+      });
+
+      $(".item").mouseleave(function(){
+
+        $("#changeText").html("");
+      });
+
+
+    });
+
+    </script>
+
+<section>
+<h3>FAQ</h3>
+    <div>How Much Does It Cost To Go To Fiji ?<span class="tip">The highest youll pay is about $1,500</span></div>
+    <div>What Is There To Do In Fiji ?<span class="tip">There are sailing adventures, tours, river tubing, great food to try, ecotrax, waterfalls to see, etc.</span></div>
+    <div>What is the weather like in Fiji ?<span class="tip">The temperature is a warm tropical climate. The tempature ranges between 79 and 88 degrees.</span></div>
+    <div>Is it expensive to live in Fiji?<span class="tip">Fiji is affordable. The cost of living in Fiji is 50% lower than the cost to live in the US.</span></div>
+    <div>Is Fiji Safe?<span class="tip">It is a very safe place for travellers. It, of course, is not immune to crime, but it is a safe place to relax.</span></div>
+<img src='https://farm2.staticflickr.com/1640/25563864116_46dfe6502a_b.jpg' alt='image5'>
+</section>
+
+      </body>
+    </html>
