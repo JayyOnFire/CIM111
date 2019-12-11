@@ -1,0 +1,55 @@
+@import "finaldesktop.css";
+
+header{
+  width: 400px;
+}
+
+main{
+  width: 400px;
+}
+
+footer{
+  width: 400px;
+  height: 50px;
+}
+
+nav ul li{
+  display: block;
+  text-align: center;
+}
+
+#grid1, #grid2, #grid3, #grid4{
+  width: 400px;
+  display: block;
+}
+
+#grid1 img{
+  width: 400px;
+}
+
+#grid1 p{
+  width: 400px;
+  text-align: center;
+}
+
+#grid2 p{
+  width: 400px;
+  text-align: center;
+}
+#grid3 img{
+  width: 400px;
+}
+
+#grid3 p{
+  width: 400px;
+  text-align: center;
+}
+
+#grid4 img{
+  width: 400px;
+}
+
+#grid4 p{
+  width: 400px;
+  text-align: center;
+}
